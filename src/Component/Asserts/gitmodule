@@ -1,0 +1,3 @@
+[submodule "src/Asserts"]
+    path = src/Asserts
+    url = https://github.com/egattor/mern-blog-assets.git
