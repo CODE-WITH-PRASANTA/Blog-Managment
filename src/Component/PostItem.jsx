@@ -3,6 +3,8 @@ import { Link } from "react-router-dom"
 import PostAuthor from './PostAuthor'
 
 const PostItem = ({ postID, category, thumbnail, description, authorID, tittle }) => {
+    const shortDiscription = description.length > 190 ? description.substr(0, 190) + '...' : description;
+    const postTittle = tittle.length > 30 ? tittle.substr(0, 30) + '...' : tittle;
     return (
         <article className='post'>
             <div className="post__thumbnail">
@@ -10,13 +12,14 @@ const PostItem = ({ postID, category, thumbnail, description, authorID, tittle }
             </div>
             <div className="post_content">
                 <Link to={`/posts/${postID}`}>
-                    <h3>{tittle}</h3>
+                    <h3>{postTittle}</h3>
                 </Link>
-                <p>{description}</p>
+                <p>{shortDiscription}</p>
 
                 <div className="post_footer">
                     <PostAuthor />
-                    <Link to={`posts/categories/${category}`}>{category}</Link>
+                    <Link to={`posts/categories/${category}`} className='
+                    btn category'>{category}</Link>
                 </div>
             </div>
         </article>

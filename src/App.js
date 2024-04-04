@@ -14,6 +14,8 @@ import Logout from "./Component/Pages/Logout";
 import Login from "./Component/Pages/Login";
 import Register from "./Component/Pages/Register";
 import UserProfile from "./Component/Pages/UserProfile";
+import PostAuthor from "./Component/PostAuthor";
+import Authorpost from "./Component/Pages/Authorpost";
 
 function App() {
   return (
@@ -33,6 +35,8 @@ function App() {
           <Route path="Login" element={<Login />} />
           <Route path="Register" element={<Register />} />
           <Route path="Profile" element={<UserProfile />} />
+          <Route path="PostAuthor" element={<PostAuthor />} />
+          <Route path="Authorpost" element={<Authorpost />} />
         </Routes>
         <Footer />
       </BrowserRouter>

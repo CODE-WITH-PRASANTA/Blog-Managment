@@ -246,7 +246,9 @@ footer {
   width: 30rem;
 }
 
-.posts_container {
+.posts_container,
+.author_post_container,
+.category-post_container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 4rem;
@@ -301,3 +303,130 @@ footer {
 .post_author_avatar img {
   width: 2.5rem;
 }
+
+/* ===================================Post Detail====================================== */
+/* ===================================Post Detail====================================== */
+.post-Detail {
+  width: var(--form-width);
+  background: var(--color-white);
+  margin-inline: auto;
+  padding: 2rem 0;
+}
+.postDetail_Thumbnail img {
+  width: 50rem;
+}
+
+.postDetail_Header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.postDetails_buttons {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.postDetail_Thumbnail {
+  margin: 1rem 0;
+  height: fit-content;
+  max-height: 30rem;
+  overflow: hidden;
+}
+
+.post-Detail p {
+  margin-bottom: 0.7rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+/* ==============================   Sign up page  ==============================*/
+/* ==============================   Sign Up Page  ==============================*/
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 0.6rem 1rem;
+  border-radius: var(--radius-1);
+  resize: none;
+}
+.Form_error_message {
+  background: var(--color-red);
+  color: var(--color-white);
+  font-size: 0.8rem;
+  padding: 0.6rem 1rem;
+  border-radius: var(--radius-1);
+  margin-bottom: 1rem;
+}
+
+.Register,
+.Login,
+.CreatePost {
+  width: var(--form-width);
+  margin-inline: auto;
+  height: calc(100vh - 12rem);
+  display: grid;
+  place-items: center;
+}
+
+.Register h2,
+.Login h2,
+.CreatePost h2 {
+  margin-bottom: 2rem;
+}
+
+.Register small,
+.Login small {
+  display: block;
+  margin-top: 1.5rem;
+}
+
+.Register small a,
+.Login small a {
+  color: var(--color-primary);
+}
+
+/* ==============================   Authors Page Design  ==============================*/
+/* ==============================   Authors Page Design  ==============================*/
+.authors-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+}
+
+.author {
+  background: var(--color-white);
+  padding: 1rem;
+  border-radius: var(--radius-3);
+  display: flex;
+  gap: 1rem;
+  transition: var(--transition);
+}
+
+.author:hover {
+  box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.7);
+}
+.author_avatar img {
+  width: 4.5rem;
+}
+.author_avatar {
+  width: 5rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  border: 0.3rem solid var(--color-bg);
+  overflow: hidden;
+}
+
+.author_info p {
+  margin-top: 1rem;
+}
+
+/* ==============================   UserProfile  ==============================*/
+/* ==============================   UserProfile  ==============================*/
