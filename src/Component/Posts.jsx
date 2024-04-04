@@ -4,7 +4,7 @@ import PostItem from './PostItem';
 import { DUMMY_POST } from '../Data'
 
 const Posts = () => {
-    const [posts, setPosts] = useState(DUMMY_POST);
+    const [posts] = useState(DUMMY_POST);
 
 
     return (
