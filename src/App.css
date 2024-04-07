@@ -200,9 +200,19 @@ nav {
   display: none;
 }
 .Nav-Menu {
+  font-size: medium;
+  font-weight: 700;
   display: flex;
   align-items: center;
   gap: 3rem;
+}
+.Logout_btn {
+  display: block;
+  font-size: 2rem;
+  margin-top: 0.7rem;
+  cursor: pointer;
+  overflow: hidden;
+  background-color: var(--color-bg);
 }
 
 /* ==============================   Footer  ==============================*/
@@ -699,5 +709,8 @@ select {
   }
   .post__thumbnail img {
     width: 100%;
+  }
+  .Logout_btn {
+    display: none;
   }
 }

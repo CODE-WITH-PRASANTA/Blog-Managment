@@ -1,11 +1,11 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import Avatar from './Asserts/avatar1.jpg'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import Avatar from './Asserts/avatar1.jpg';
 
 const PostAuthor = () => {
     return (
-        <div>
-            <Link to={'/Authorpost'} className='post_author'>
+        <div className='PostAuthor'>
+            <Link to={`/Authors`} className='post_author'> {/* Updated 'to' prop */}
                 <div className="post_author_avatar">
                     <img src={Avatar} alt="" />
                 </div>
@@ -15,7 +15,7 @@ const PostAuthor = () => {
                 </div>
             </Link>
         </div>
-    )
-}
+    );
+};
 
-export default PostAuthor
+export default PostAuthor;

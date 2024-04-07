@@ -1,9 +1,10 @@
-import React from 'react'
 import PostAuthor from '../PostAuthor'
 import { Link } from 'react-router-dom'
 import Thumbnail from '../Asserts/blog22.jpg'
 
+
 const PostDetail = () => {
+
     return (
         <section className="post-Detail">
             <div className="container postDetail_Container">

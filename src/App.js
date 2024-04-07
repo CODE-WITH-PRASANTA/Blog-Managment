@@ -38,7 +38,7 @@ function App() {
           <Route path="Register" element={<Register />} />
           <Route path="Profile" element={<UserProfile />} />
           <Route path="PostAuthor" element={<PostAuthor />} />
-          <Route path="Authorpost" element={<Authorpost />} />
+          <Route path="authorpost" element={<Authorpost />} />
           <Route path="Dashboard" element={<DashBoard />} />
           <Route path="posts/:id/delete" element={<DeletePost />} />
         </Routes>
