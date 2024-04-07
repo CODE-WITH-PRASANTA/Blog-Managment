@@ -3,7 +3,7 @@ import { DUMMY_POST } from '../../Data'
 import PostItem from '../PostItem';
 
 const Authorpost = () => {
-    const [posts, setPosts] = useState(DUMMY_POST);
+    const [posts] = useState(DUMMY_POST);
 
     return (
         <section className='Author-post'>
