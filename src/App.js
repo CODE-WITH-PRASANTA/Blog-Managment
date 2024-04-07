@@ -16,6 +16,8 @@ import Register from "./Component/Pages/Register";
 import UserProfile from "./Component/Pages/UserProfile";
 import PostAuthor from "./Component/PostAuthor";
 import Authorpost from "./Component/Pages/Authorpost";
+import DashBoard from "./Component/Pages/DashBoard";
+import DeletePost from "./Component/Pages/DeletePost";
 
 function App() {
   return (
@@ -30,13 +32,15 @@ function App() {
           <Route path="Create" element={<CreatePost />} />
           <Route path="Authors" element={<Authors />} />
           <Route path="posts/categories/:category" element={<CategoryPost />} />
-          <Route path="Post/:id/edit" element={<EditPost />} />
+          <Route path="posts/:id/edit" element={<EditPost />} />
           <Route path="Logout" element={<Logout />} />
           <Route path="Login" element={<Login />} />
           <Route path="Register" element={<Register />} />
           <Route path="Profile" element={<UserProfile />} />
           <Route path="PostAuthor" element={<PostAuthor />} />
           <Route path="Authorpost" element={<Authorpost />} />
+          <Route path="Dashboard" element={<DashBoard />} />
+          <Route path="posts/:id/delete" element={<DeletePost />} />
         </Routes>
         <Footer />
       </BrowserRouter>
